@@ -1,11 +1,11 @@
-/* Global reset */
+/* Reset básico */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* General layout */
+/* Body general */
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #ffe9ec, #fef1f5);
@@ -16,7 +16,7 @@ body {
   padding: 20px;
 }
 
-/* Container */
+/* Container centrado */
 .container {
   display: flex;
   justify-content: center;
@@ -26,7 +26,7 @@ body {
   padding: 20px;
 }
 
-/* Card */
+/* Card con centrado automático */
 .card {
   background: #ffffff;
   padding: 30px 20px;
@@ -37,17 +37,16 @@ body {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   animation: fadeIn 1s ease;
   word-break: break-word;
-  margin: 0 auto; /* ✅ Esto asegura el centrado */
+  margin: 0 auto;
 }
 
-
-/* Emojis */
+/* Emojis arriba */
 .emoji {
   font-size: 30px;
   margin-bottom: 10px;
 }
 
-/* Texts */
+/* Títulos y mensajes */
 h1 {
   font-family: 'Playfair Display', serif;
   font-size: 24px;
@@ -69,7 +68,7 @@ h1 {
   line-height: 1.5;
 }
 
-/* Buttons */
+/* Botones */
 .main-button, .yes-button {
   background-color: #ff7da6;
   border: none;
@@ -104,12 +103,12 @@ h1 {
   font-style: italic;
 }
 
-/* Hidden */
+/* Hidden elements */
 .hidden {
   display: none;
 }
 
-/* Animation */
+/* Fade animation */
 .fade-in {
   animation: fadeIn 1s ease forwards;
 }
@@ -119,7 +118,7 @@ h1 {
   100% {opacity: 1;}
 }
 
-/* Responsive fixes */
+/* Responsive para móviles */
 @media (max-width: 480px) {
   .card {
     padding: 20px 15px;
