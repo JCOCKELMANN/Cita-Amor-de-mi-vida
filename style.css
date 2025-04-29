@@ -1,0 +1,102 @@
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffe9ec, #fef1f5);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Card */
+  .container {
+    padding: 20px;
+  }
+  
+  .card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease;
+    position: relative;
+  }
+  
+  /* Emojis arriba */
+  .emoji {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  /* Títulos y mensajes */
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .message {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  
+  .invite-text {
+    margin-top: 25px;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+  }
+  
+  /* Botones */
+  .main-button, .yes-button {
+    background-color: #ff7da6;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .main-button:hover, .yes-button:hover {
+    background-color: #ff5d89;
+    transform: translateY(-2px);
+  }
+  
+  .options {
+    margin-top: 20px;
+  }
+  
+  /* Final Message */
+  .final-message {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #444;
+    font-style: italic;
+  }
+  
+  /* Hidden elements */
+  .hidden {
+    display: none;
+  }
+  
+  /* Animation */
+  .fade-in {
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  

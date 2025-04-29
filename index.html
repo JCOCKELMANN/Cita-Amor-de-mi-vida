@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para ti 💖</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="emoji">💖🌸✨</div>
+      <h1>Eres lo mejor que me ha pasado en la vida</h1>
+      <p class="message">
+        Te amo infinitamente 💕<br />
+        Gracias por estar en mi vida 🌟
+      </p>
+      <button id="showInvitation" class="main-button">Pulsa aquí</button>
+
+
+      <div id="invitation" class="hidden fade-in">
+        <p class="invite-text">
+          Te invito a desayunar el jueves 🍽️<br>
+          <strong>Una cita: tú y yo 🌹</strong><br />
+          Te amo 💖
+        </p>
+        <div class="options">
+            <button class="yes-button" onclick="accept()">Sí me encantaría</button>
+            <button class="yes-button" disabled style="opacity: 0.5; cursor: not-allowed;">No</button>
+          </div>
+          
+        <p id="response" class="hidden final-message">
+          ¡Entonces es una cita! 🐝💖<br />
+          <em>Nunca olvides lo especial que eres para mí 🌷.</em>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
