@@ -13,6 +13,8 @@ body {
   /* Card */
   .container {
     padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   .card {
@@ -25,6 +27,8 @@ body {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1s ease;
     position: relative;
+    box-sizing: border-box;
+    word-wrap: break-word;
   }
   
   /* Emojis arriba */
@@ -66,6 +70,8 @@ body {
     cursor: pointer;
     margin-top: 20px;
     transition: background 0.3s ease, transform 0.2s ease;
+    max-width: 100%;
+    box-sizing: border-box;
   }
   
   .main-button:hover, .yes-button:hover {
@@ -75,6 +81,10 @@ body {
   
   .options {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
   }
   
   /* Final Message */
@@ -98,5 +108,29 @@ body {
   @keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .card {
+      padding: 25px 15px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    .message, .invite-text, .final-message {
+      font-size: 14px;
+    }
+  
+    .main-button, .yes-button {
+      font-size: 14px;
+      padding: 10px 18px;
+    }
+  
+    .emoji {
+      font-size: 24px;
+    }
   }
   
