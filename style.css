@@ -1,136 +1,141 @@
 /* General */
+* {
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #ffe9ec, #fef1f5);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Card */
-  .container {
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .card {
-    background: #ffffff;
-    padding: 40px 30px;
-    border-radius: 20px;
-    max-width: 400px;
-    width: 100%;
-    text-align: center;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1s ease;
-    position: relative;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-  
-  /* Emojis arriba */
-  .emoji {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-  
-  /* Títulos y mensajes */
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffe9ec, #fef1f5);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  padding: 20px;
+  width: 100%;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease;
+  margin: auto;
+  word-break: break-word;
+}
+
+/* Emojis */
+.emoji {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* Texts */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+.message {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.invite-text {
+  margin-top: 25px;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Buttons */
+.main-button, .yes-button {
+  background-color: #ff7da6;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  max-width: 100%;
+}
+
+.main-button:hover, .yes-button:hover {
+  background-color: #ff5d89;
+  transform: translateY(-2px);
+}
+
+.options {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Final Message */
+.final-message {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #444;
+  font-style: italic;
+}
+
+/* Hidden */
+.hidden {
+  display: none;
+}
+
+/* Animation */
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/* ✅ FULLY RESPONSIVE for mobile */
+@media (max-width: 400px) {
   h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 26px;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 20px;
   }
-  
-  .message {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 30px;
-    line-height: 1.5;
+
+  .emoji {
+    font-size: 24px;
   }
-  
-  .invite-text {
-    margin-top: 25px;
-    font-size: 16px;
-    color: #444;
-    line-height: 1.5;
-  }
-  
-  /* Botones */
-  .main-button, .yes-button {
-    background-color: #ff7da6;
-    border: none;
-    padding: 12px 25px;
-    font-size: 16px;
-    border-radius: 50px;
-    color: white;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background 0.3s ease, transform 0.2s ease;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .main-button:hover, .yes-button:hover {
-    background-color: #ff5d89;
-    transform: translateY(-2px);
-  }
-  
-  .options {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-  
-  /* Final Message */
+
+  .message,
+  .invite-text,
   .final-message {
-    margin-top: 30px;
-    font-size: 16px;
-    color: #444;
-    font-style: italic;
+    font-size: 14px;
   }
-  
-  /* Hidden elements */
-  .hidden {
-    display: none;
+
+  .main-button,
+  .yes-button {
+    font-size: 14px;
+    padding: 10px 18px;
   }
-  
-  /* Animation */
-  .fade-in {
-    animation: fadeIn 1s ease forwards;
+
+  .card {
+    padding: 20px 15px;
   }
-  
-  @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 480px) {
-    .card {
-      padding: 25px 15px;
-    }
-  
-    h1 {
-      font-size: 20px;
-    }
-  
-    .message, .invite-text, .final-message {
-      font-size: 14px;
-    }
-  
-    .main-button, .yes-button {
-      font-size: 14px;
-      padding: 10px 18px;
-    }
-  
-    .emoji {
-      font-size: 24px;
-    }
-  }
-  
+}
