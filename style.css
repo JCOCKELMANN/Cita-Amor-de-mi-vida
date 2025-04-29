@@ -18,8 +18,12 @@ body {
 
 /* Container */
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  max-width: 500px;
+  min-height: 100vh;
+  padding: 20px;
 }
 
 /* Card */
@@ -28,11 +32,14 @@ body {
   padding: 30px 20px;
   border-radius: 20px;
   width: 100%;
+  max-width: 400px;
   text-align: center;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   animation: fadeIn 1s ease;
   word-break: break-word;
+  margin: 0 auto; /* ✅ Esto asegura el centrado */
 }
+
 
 /* Emojis */
 .emoji {
